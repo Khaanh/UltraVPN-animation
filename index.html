@@ -15,40 +15,674 @@
 	<div class="wrapper">
 		<main class="main-page">
 			<header class="header">
+			  <div class="container header__container">
+			    <div class="burger js-openMen">
+			      <div class="burger__holder">
+			        <span></span>
+			      </div>
+			    </div>
+			    <!-- /.burger js-openMen -->
 			
+			    <a href="./" class="logo wow bounceInLeft" data-wow-delay="0.1s">
+			      <i class="logo__icon">
+			        <img src="./img/logo.svg" alt="logo" width="34" height="39">
+			      </i>
+			      <span>UltaVPN</span>
+			    </a>
+			    <!-- /.logo -->
+			    
+			    <div class="nav-wrapper">
+			      <nav class="nav">
+			        <ul class="menu">
+			          <li class="menu-item icon-home wow fadeInDown" data-wow-delay="0.1s"><a href="#">Home</a></li>
+			          <li class="menu-item icon-features wow fadeInDown" data-wow-delay="0.2s"><a href="#">Features</a></li>
+			          <li class="menu-item icon-price wow fadeInDown" data-wow-delay="0.3s"><a href="#">Price</a></li>
+			          <li class="menu-item icon-help wow fadeInDown" data-wow-delay="0.4s"><a href="#">Help</a></li>
+			          <li class="menu-item icon-apps wow fadeInDown" data-wow-delay="0.5s"><a href="#">Apps</a></li>
+			          <li class="menu-item icon-faq wow fadeInDown" data-wow-delay="0.6s"><a href="#">FAQ</a></li>
+			        </ul>
+			      </nav>
+			      <!-- /.nav -->
+			
+			      <a href="#" class="btn header__btn js-modal-open wow fadeInDown" data-wow-delay="0.7s" data-target='modal-1'>My account</a>
+			
+			      <div class="account-info is-hidden">
+			        <div class="account-info__email">
+			          <p>email@mail.com</p>
+			          <i class="account-info__icon"></i>
+			        </div>
+			      </div>
+			      
+			    </div>
+			  </div>
 			</header>
 
-			<div class="hero">
+			<section class="hero">
+        <div class="container hero__container">
+          <div class="hero-block wow fadeInLeft" data-wow-delay="0.8s">
+            <h1 class="hero-title">
+              Get the best VPN <br> for United States
+            </h1>
+            <ul class="plus-list">
+              <li class="plus-items">Protect your privacy online</li>
+              <li class="plus-items">Stay secure at all times</li>
+              <li class="plus-items">30-day money-back guarantee</li>
+            </ul>
+            <div class="hero-offer">Exclusive offer: <strong>$1.88/mo</strong></div>
+            <a class="btn btn-primary hero__btn" download="">Download</a>
+          </div>
 
-        <div class="svg">
-          <img src="./img/svg.svg" alt="">
-          <div class="svg-rotate">
-            <img src="./img/test.svg" alt="">
+          <div class="hero-figure wow fadeInRight" data-wow-delay="0.8s">
+            <picture>
+              <source srcset="./img/hero-mobile.svg" media="(max-width: 568px)" width="406" height="248" pic="hero pic">
+              <source srcset="./img/hero-tablet.svg" media="(max-width: 768px)" width="630" height="1028" pic="hero pic">
+              <img src="./img/hero.svg" alt="hero pic" width="1006" height="618">
+            </picture>
+            <div class="hero-figure__one">
+              <img src="./img/gear.svg" alt="icon" width="202" height="198">
+            </div>
+            <div class="hero-figure__two">
+              <img src="./img/gear-2.svg" alt="icon" width="156" height="155">
+            </div>
           </div>
-          <div class="svg-rotate2">
-            <img src="./img/test2.svg" alt="">
-          </div>
-          
         </div>
+        <div class="bubble-decor"></div>
+      </section>
+      <!-- /.hero -->
 
+      <section class="protect-privacy">
+        <div class="container">
+          <div class="caption-holder">
+            <div class="headline protect-privacy__headline">Protect your privacy <br>& net neutrality</div>
+            <div class="caption-holder__wrap">
+              <p>The internet may seem like a place where you can be truly private. In the light of numerous breaches & data leaks, we can all see that it’s not the case. It’s time to take matters into your own hands and use a VPN.</p>
+              <p>If the laws against net neutrality do pass, we are going to wake up to a controlled internet. It should be the land of freedom, but the future seems bleak - unless you do something about it. Fortunately, you can! With Surfshark, you can truly enjoy the internet with no borders or arbitrary restrictions.</p>
+            </div>
+          </div>
+          <!-- /.caption-holder -->
+          <ul class="protect-list">
+            <li class="protect-items wow fadeInUp" data-wow-delay="0.3s">
+              <i class="protect-icon">
+                <img src="./img/icon-protect-01.svg" alt="icon" width="84" height="65">
+              </i>
+              <div class="protect-inner">
+                <strong class="protect-title">Data encryption</strong>
+                <p>With strong VPN protocols OpenVPN and IKEv2 on your VPN connection, we can protect your data from hackers looking to steal sensitive information.</p>
+              </div>
+            </li>
+            <li class="protect-items wow fadeInUp" data-wow-delay="0.3s">
+              <i class="protect-icon">
+                <img src="./img/icon-protect-02.svg" alt="icon" width="80" height="80">
+              </i>
+              <div class="protect-inner">
+                <strong class="protect-title">No Traffic Logs</strong>
+                <p>While we do collect connection and bandwidth data to ensure your safety and satisfaction, we never track or store your data or browsing history.</p>
+              </div>
+            </li>
+            <li class="protect-items wow fadeInUp" data-wow-delay="0.4s">
+              <i class="protect-icon">
+                <img src="./img/icon-protect-03.svg" alt="icon" width="80" height="80">
+              </i>
+              <div class="protect-inner">
+                <strong class="protect-title">Practice Safe Wi-Fi</strong>
+                <p>Our VPN tunnel lets you browse and go undetected on public Wi-Fi and keeps your data safe from cybercriminals.</p>
+              </div>
+            </li>
+            <li class="protect-items wow fadeInUp" data-wow-delay="0.4s">
+              <i class="protect-icon">
+                <img src="./img/icon-protect-04.svg" alt="icon" width="61" height="80">
+              </i>
+              <div class="protect-inner">
+                <strong class="protect-title">Keep your True IP Hidden</strong>
+                <p>Namecheap VPN assigns you a unique, random IP address, masking your location and keeps your real one hidden.</p>
+              </div>
+            </li>
+            <li class="protect-items wow fadeInUp" data-wow-delay="0.5s">
+              <i class="protect-icon">
+                <img src="./img/icon-protect-05.svg" alt="icon" width="80" height="80">
+              </i>
+              <div class="protect-inner">
+                <strong class="protect-title">DNS leak protection</strong>
+                <p>Our integrated and secure DNS prevents data ‘leaks’ about your online activity.</p>
+              </div>
+            </li>
+            <li class="protect-items wow fadeInUp" data-wow-delay="0.5s">
+              <i class="protect-icon">
+                <img src="./img/icon-protect-06.svg" alt="icon" width="80" height="80">
+              </i>
+              <div class="protect-inner">
+                <strong class="protect-title">Kill Switch</strong>
+                <p>Your privacy will remain secure and IP address hidden if your VPN server disconnects.</p>
+              </div>
+            </li>
+          </ul>
+          <!-- /.protect-list -->
+        </div>
+      </section>
+      <!-- /.protect-privacy -->
 
+      <section class="download-app">
+        <div class="container">
+          <div class="download-app__row wow fadeInUp" data-wow-delay="0.2s">
+            <div class="download-app__desc">
+              <div class="caption-holder download-app__caption-holder">
+                <div class="headline download-app__headline">Download for IOS</div>
+                <p>If the laws against net neutrality do pass, we are going to wake up to a controlled internet. It should be the land of freedom, but the future seems bleak - unless you do something about it.</p>
+              </div>
+              <a href="#" download="" class="download-app__link">
+                <i class="download-app__icon">
+                  <picture>
+                    <source type="image/webp" srcset="./img/download-01.webp, ./img/download-01@2x.webp 2x" width="211" height="63">
+                    <img src="./img/download-01.jpg" srcset="./img/download-01@2x.jpg 2x" alt="pic" width="211" height="63">
+                  </picture>
+                </i>
+              </a>
+            </div>
+            <div class="download-app__figure">
+              <picture>
+                <!-- <source type="image/webp" srcset="./img/phone-ios.webp"> -->
+                <img src="./img/phone-ios.png" alt="pic">
+              </picture>
+            </div>
+          </div>
+          <div class="download-app__row wow fadeInUp" data-wow-delay="0.2s">
+            <div class="download-app__desc">
+              <div class="caption-holder download-app__caption-holder">
+                <div class="headline download-app__headline">Download for Android</div>
+                <p>If the laws against net neutrality do pass, we are going to wake up to a controlled internet. It should be the land of freedom, but the future seems bleak - unless you do something about it. Fortunately, you can! With Surfshark, you can truly enjoy the internet with no borders or arbitrary restrictions.</p>
+              </div>
+              <a href="#" download="" class="download-app__link">
+                <i class="download-app__icon">
+                  <picture>
+                    <source type="image/webp" srcset="./img/download-02.webp, ./img/download-02@2x.webp 2x" width="211" height="63">
+                    <img src="./img/download-02.jpg" srcset="./img/download-02@2x.jpg 2x" alt="pic" width="211" height="63">
+                  </picture>
+                </i>
+              </a>
+            </div>
+            <div class="download-app__figure">
+              <picture>
+                <source type="image/webp" srcset="./img/phone-window.webp">
+                <img src="./img/phone-window.png" alt="pic">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.download-app -->
 
-      </div>
+      <section class="access-servers">
+        <div class="container">
+          <div class="caption-holder access-servers__caption-holder">
+            <div class="headline">Access servers worldwide</div>
+            <p>1040+ servers in 61+ countries</p>
+          </div>
 
+          <div class="servers-row">
+            <div class="servers-countries">
+              <p class="is-current">Europe</p>
+              <p>Asia</p>
+              <p>USA</p>
+              <p>etc</p>
+            </div>
+            <ul class="servers-list">
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.3s">
+                <i class="servers-icon">
+                  <img src="./img/flag-01.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.4s">
+                <i class="servers-icon">
+                  <img src="./img/flag-02.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.5s">
+                <i class="servers-icon">
+                  <img src="./img/flag-03.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.6s">
+                <i class="servers-icon">
+                  <img src="./img/flag-04.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
 
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.3s">
+                <i class="servers-icon">
+                  <img src="./img/flag-05.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.4s">
+                <i class="servers-icon">
+                  <img src="./img/flag-06.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.5s">
+                <i class="servers-icon">
+                  <img src="./img/flag-07.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.6s">
+                <i class="servers-icon">
+                  <img src="./img/flag-08.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.3s">
+                <i class="servers-icon">
+                  <img src="./img/flag-09.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.4s">
+                <i class="servers-icon">
+                  <img src="./img/flag-10.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.5s">
+                <i class="servers-icon">
+                  <img src="./img/flag-11.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.6s">
+                <i class="servers-icon">
+                  <img src="./img/flag-12.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.3s">
+                <i class="servers-icon">
+                  <img src="./img/flag-13.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.4s">
+                <i class="servers-icon">
+                  <img src="./img/flag-14.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.5s">
+                <i class="servers-icon">
+                  <img src="./img/flag-15.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.6s">
+                <i class="servers-icon">
+                  <img src="./img/flag-16.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.3s">
+                <i class="servers-icon">
+                  <img src="./img/flag-17.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.4s">
+                <i class="servers-icon">
+                  <img src="./img/flag-18.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.5s">
+                <i class="servers-icon">
+                  <img src="./img/flag-19.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+              <li class="servers-items wow fadeInUp" data-wow-delay="0.6s">
+                <i class="servers-icon">
+                  <img src="./img/flag-20.png"alt="pic" width="30" height="30">
+                </i>
+                <p>Australia</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- /.access-servers -->
+
+      <section class="choose-plan">
+        <div class="choose-svg">
+          <img src="./img/choose-svg.svg" alt="icon" width="1125" height="750">
+        </div>
+        <div class="container">
+          <div class="headline choose-plan__headline">Choose your plan</div>
+          <ul class="plan-list">
+            <li class="plan-items wow fadeInUp" data-wow-delay="0.3s">
+              <a href="#" class="plan-link">
+                <div class="plan-inner">
+                  <strong class="plan-period">3 year plan</strong>
+                  <p>The internet may seem like a place where you can be truly private.</p>
+                  <div class="price"><strong>1.88 <span>$/mo</span></strong></div>
+                </div>
+                <button type="button" class="btn btn--border plan-btn">Get starded</button>
+              </a>
+            </li>
+            <li class="plan-items wow fadeInUp" data-wow-delay="0.4s">
+              <a href="#" class="plan-link">
+                <div class="plan-inner">
+                  <strong class="plan-period">2 year plan</strong>
+                  <p>The internet may seem like a place where you can be truly private.</p>
+                  <div class="price"><strong>1.88 <span>$/mo</span></strong></div>
+                </div>
+                <button type="button" class="btn btn--border plan-btn">Get starded</button>
+              </a>
+            </li>
+            <li class="plan-items wow fadeInUp" data-wow-delay="0.5s">
+              <a href="#" class="plan-link">
+                <div class="plan-inner">
+                  <strong class="plan-period">Monthly plan</strong>
+                  <p>The internet may seem like a place where you can be truly private.</p>
+                  <div class="price"><strong>1.88 <span>$/mo</span></strong></div>
+                </div>
+                <button type="button" class="btn btn--border plan-btn">Get starded</button>
+              </a>
+            </li>
+            <li class="plan-items wow fadeInUp" data-wow-delay="0.6s">
+              <a href="#" class="plan-link">
+                <div class="plan-inner">
+                  <strong class="plan-period">1 year plan</strong>
+                  <p>The internet may seem like a place where you can be truly private.</p>
+                  <div class="price"><strong>1.88 <span>$/mo</span></strong></div>
+                </div>
+                <button type="button" class="btn btn--border plan-btn">Get starded</button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- /.choose-plan -->
+      
+      <section class="packages-choice">
+        <div class="container">
+          <div class="headline packages-choice__headline">The easiest choice you’ll make</div>
+
+          <div class="packages-holder">
+            <div class="packages-options">
+              <p>US Netflix</p>
+              <p>JP Netflix</p>
+              <p>Allows P2P</p>
+              <p>No. of devices</p>
+              <p>Best Price</p>
+            </div>
+            <ul class="packages-list">
+              <li class="packages-items wow fadeInUp" data-wow-delay="0.3s">
+                <a href="#" class="packages-link">
+                  <i class="packages-icon">
+                    <picture>
+                      <source type="image/webp" srcset="./img/icon-traffic-01.webp, ./img/icon-traffic-01@2x.webp 2x" width="112" heigth="37">
+                      <img src="./img/icon-traffic-01.png" srcset="./img/icon-traffic-01@2x.png 2x" alt="pic" width="112" heigth="37">
+                    </picture>
+                  </i>
+                  <ul class="traffic-checked">
+                    <li class="traffic-checked__items">
+                      <i class="traffic-checked__icon"></i>
+                    </li>
+                    <li class="traffic-checked__items">
+                      <i class="traffic-checked__icon"></i>
+                    </li>
+                    <li class="traffic-checked__items">
+                      <i class="traffic-checked__icon"></i>
+                    </li>
+                  </ul>
+                  <div class="unlimited">Unlimited</div>
+                  <strong>1.88 $/mo</strong>
+                </a>
+              </li>
+              <li class="packages-items wow fadeInUp" data-wow-delay="0.4s">
+                <a href="#" class="packages-link">
+                  <i class="packages-icon">
+                    <picture>
+                      <source type="image/webp" srcset="./img/icon-traffic-02.webp, ./img/icon-traffic-02@2x.webp 2x" width="112" heigth="37">
+                      <img src="./img/icon-traffic-02.png" srcset="./img/icon-traffic-02@2x.png 2x" alt="pic" width="94" heigth="25">
+                    </picture>
+                  </i>
+                  <ul class="traffic-checked">
+                    <li class="traffic-checked__items">
+                      <i class="traffic-checked__icon"></i>
+                    </li>
+                    <li class="traffic-checked__items">
+                      <i class="traffic-checked__icon"></i>
+                    </li>
+                    <li class="traffic-checked__items">
+                      <i class="traffic-checked__icon"></i>
+                    </li>
+                  </ul>
+                  <div class="unlimited">Unlimited</div>
+                  <strong>1.99 $/mo</strong>
+                </a>
+              </li>
+              <li class="packages-items wow fadeInUp" data-wow-delay="0.5s">
+                <a href="#" class="packages-link">
+                  <i class="packages-icon">
+                    <picture>
+                      <source type="image/webp" srcset="./img/icon-traffic-03.webp, ./img/icon-traffic-03@2x.webp 2x" width="112" heigth="37">
+                      <img src="./img/icon-traffic-03.png" srcset="./img/icon-traffic-03@2x.png 2x" alt="pic" width="94" heigth="25">
+                    </picture>
+                  </i>
+                  <ul class="traffic-checked">
+                    <li class="traffic-checked__items">
+                      <i class="traffic-checked__icon"></i>
+                    </li>
+                    <li class="traffic-checked__items">
+                      <i class="traffic-checked__icon"></i>
+                    </li>
+                    <li class="traffic-checked__items">
+                      <i class="traffic-checked__icon"></i>
+                    </li>
+                  </ul>
+                  <div class="unlimited">5</div>
+                  <strong>6.67 $/mo</strong>
+                </a>
+              </li>
+              <li class="packages-items wow fadeInUp" data-wow-delay="0.6s">
+                <a href="#" class="packages-link">
+                  <i class="packages-icon">
+                    <picture>
+                      <source type="image/webp" srcset="./img/icon-traffic-04.webp, ./img/icon-traffic-04@2x.webp 2x" width="112" heigth="37">
+                      <img src="./img/icon-traffic-04.png" srcset="./img/icon-traffic-04@2x.png 2x" alt="pic" width="94" heigth="25">
+                    </picture>
+                  </i>
+                  <ul class="traffic-checked">
+                    <li class="traffic-checked__items">
+                      <i class="traffic-checked__icon"></i>
+                    </li>
+                    <li class="traffic-checked__items">
+                      <i class="traffic-checked__icon"></i>
+                    </li>
+                    <li class="traffic-checked__items">
+                      <i class="traffic-checked__icon"></i>
+                    </li>
+                  </ul>
+                  <div class="unlimited">6</div>
+                  <strong>3.22 $/mo</strong>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- /.packages-choice -->
+
+      <section class="pre-footer">
+        <div class="container pre-footer__container">
+          <div class="pre-footer__left">
+            <div class="pre-footer__info">
+              <div class="logo pre-footer__logo">
+                <i class="logo__icon">
+                  <img src="./img/logo.svg" alt="logo" width="34" height="39">
+                </i>
+                <span>UltaVPN</span>
+              </div>
+              <p>If the laws against net neutrality do pass, we are going to wake up to a controlled internet. It should be the land of freedom, but the future seems bleak</p>
+            </div>
+          </div>
+          <div class="pre-footer__right">
+            <div class="pre-footer__wrap">
+              <div class="pre-footer__inner">
+                <p>Technologies</p>
+                <span>AES - 256 encryption</span>
+              </div>
+              <div class="pre-footer__inner">
+                <p>The best security solutions</p>
+                <span>4096-bit authentication keys</span>
+              </div>
+            </div>
+            <div class="act-wrap">
+              <a href="#" class="act-link">Get starded</a>
+              <i class="act-icon"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.pre-footer -->
 
 			
 		</main>
 		<footer class="footer">
 		  <div class="container">
-		    
+		    <div class="footer-section">
+		      <div class="social">
+		        <div class="caption social__caption">Social media</div>
+		        <ul class="social-list">
+		          <li class="social-items">
+		            <a href="#" target="_blank" rel="noopener noreferrer" class="social-link icon-youtube"></a>
+		          </li>
+		          <li class="social-items">
+		            <a href="#" target="_blank" rel="noopener noreferrer" class="social-link icon-fb"></a>
+		          </li>
+		          <li class="social-items">
+		            <a href="https://t.me/nickname" target="_blank" rel="noopener noreferrer" class="social-link icon-telegram "></a>
+		          </li>
+		        </ul>
+		      </div>
+		      <!-- /.social -->
 		
+		      <div class="footer-box">
+		        <nav class="pages-nav">
+		          <div class="caption">Pages</div>
+		          <ul class="pages-list">
+		            <li class="pages-items">
+		              <a href="#" class="pages-link">Home</a>
+		            </li>
+		            <li class="pages-items">
+		              <a href="#" class="pages-link">Features</a>
+		            </li>
+		            <li class="pages-items">
+		              <a href="#" class="pages-link">Price</a>
+		            </li>
+		            <li class="pages-items">
+		              <a href="#" class="pages-link">Help</a>
+		            </li>
+		            <li class="pages-items">
+		              <a href="#" class="pages-link">Apps</a>
+		            </li>
+		            <li class="pages-items">
+		              <a href="#" class="pages-link">My Account</a>
+		            </li>
+		            <li class="pages-items">
+		              <a href="#" class="pages-link">About</a>
+		            </li>
+		            <li class="pages-items">
+		              <a href="#" class="pages-link">Refund Policy</a>
+		            </li>
+		            <li class="pages-items">
+		              <a href="#" class="pages-link">Terms of use</a>
+		            </li>
+		          </ul>
+		        </nav>
+		        <!-- /.pages-nav -->
+		
+		        <nav class="contact-nav">
+		          <div class="caption">Contact us</div>
+		          <ul class="pages-list">
+		            <li class="pages-items">
+		              <a href="tel:6715550110" class="pages-link">(671) 555-0110</a>
+		            </li>
+		            <li class="pages-items">
+		              <a href="tel:2035550106" class="pages-link">(203) 555-0106</a>
+		            </li>
+		            <li class="pages-items">
+		              <a href="mailto:beth.fernandez@example.com" class="pages-link">beth.fernandez@example.com</a>
+		            </li>
+		            <li class="pages-items">
+		              <a href="#" class="pages-link">8584 W Sherman Dr undefined Desoto, <br>Oklahoma 94015 United States</a>
+		            </li>
+		          </ul>
+		        </nav>
+		        <!-- /.contact-nav -->
+		      </div>
+		      
+		    </div>
+		    
+		    <div class="copy">(c) Anim ipsum consequat id tempor ad nostrud aliqua. </div>
+		    
 		  </div>
 		</footer>
-		<!-- Developer -->
-		<div class="develop">
-		  <a href="https://t.me/kh2nh">Develop by: Khánh Nguyễn</a>
+		
+		<!-- Modal blocks -->
+		
+		<div class="modal" data-open='modal-1'>
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <button class="modal-close js-modal-close">
+		        <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+		          <rect width="19.2846" height="1.92846" transform="matrix(0.70711 0.707103 -0.70711 0.707103 1.36368 0.000183105)" fill="#5f88fd"/>
+		          <rect width="19.2846" height="1.92846" transform="matrix(0.70711 -0.707104 0.70711 0.707103 0 13.6362)" fill="#5f88fd"/>
+		        </svg>
+		      </button>
+		
+		
+		      <form action="#" class="form-acc js-account">
+		        <fieldset class="form-fieldset">
+		         <legend class="form-legend">Log in to your account</legend>
+		          <div class="form-acc__holder">
+		            <div class="form-row form-acc__row icon-envelop">
+		              <input type="email" class="form-control form-control--acc" placeholder="Email...">
+		            </div>
+		            <div class="form-row form-acc__row icon-padlock">
+		              <input type="password" autocomplete class="form-control form-control--acc" placeholder="Password...">
+		            </div>
+		          </div>
+		          <a href="#" class="forgot-pass">Forgot password</a>
+		
+		          <button class="btn btn-primary form-acc__btn">Log in</button>
+		          <a href="#" class="register-link">If you haven’t account register here</a>
+		        </fieldset>
+		      </form>
+		
+		
+		      <form action="#" class="form-reset js-reset is-none ">
+		        <fieldset class="form-fieldset">
+		         <legend class="form-legend">Reset your password</legend>
+		          <div class="form-acc__holder">
+		            <div class="form-row form-acc__row icon-envelop">
+		              <input type="email" class="form-control form-control--acc" placeholder="Email...">
+		            </div>
+		          </div>
+		          <button class="btn btn-primary form-acc__btn">Send new password</button>
+		          <a href="#" class="register-link">Back</a>
+		        </fieldset>
+		      </form> 
+		    </div>
+		  </div>
 		</div>
+		
 		<!-- ========================== -->
 		<div class="html-wrap">
 		  <div class="toggle-menu js-close-menu">
@@ -61,7 +695,19 @@
 		    </li>
 		    <li class="html-items">
 		      <span>2.</span>
-		      <a href="./ui-kit.html" class="html-link">UI-Kit.html</a>
+		      <a href="./Terms-Of-Service.html" class="html-link">Terms-Of-Service.html</a>
+		    </li>
+		    <li class="html-items">
+		      <span>3.</span>
+		      <a href="./plan-page.html" class="html-link">plan-page.html</a>
+		    </li>
+		    <li class="html-items">
+		      <span>4.</span>
+		      <a href="./admin-page.html" class="html-link">admin-page.html</a>
+		    </li>
+		    <li class="html-items">
+		      <span>5.</span>
+		      <a href="./admin-question.html" class="html-link">admin-question.html</a>
 		    </li>
 		  </ul>
 		</div>
@@ -126,29 +772,9 @@
 	</div>
 	
 	<noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
-	<script src="js/libs/jquery.min.js"></script>
-	<script src="js/main.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/libs/jquery.mask.min.js"></script>
+  <script src="js/libs/wow.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
-
-
-<!-- 
-        Ussually picture (u-pic)
-        <picture>
-          <source type="image/webp" srcset="./img/pic1.webp">
-          <img src="./img/pic1.jpg" srcset="./img/pic1.jpg" alt="pic">
-        </picture>
-          
-        Media picture (m-pic)
-        <picture>
-          <source srcset="./img/pic2.webp" media="(max-width: 768px)">
-          <source type="image/webp" srcset="./img/pic1.webp">
-          <img src="./img/pic1.jpg" srcset="./img/pic1.jpg" alt="pic">
-        </picture>
-
-        Retina pic (r-pic)
-        <picture>
-          <source srcset="./img/pic2.webp, ./img/pic2@2x.webp 2x" media="(max-width: 768px)">
-          <source type="image/webp" srcset="./img/pic1.webp, ./img/pic1@2x.webp 2x">
-          <img src="./img/pic1.jpg" srcset="./img/pic1@2x.jpg 2x" alt="pic">
-        </picture> -->
