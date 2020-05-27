@@ -1,0 +1,29 @@
+.terms-page {
+  margin: 64px 0;
+}
+
+.terms-holder {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  h1 {
+    font-family: $sec-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 32px;
+    @media only screen and (max-width: 768px) {
+      font-size: 44px;
+      line-height: 52px;
+    }
+  }
+  h2, h3, h4 {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  ol {
+    padding-left: 32px;
+  }
+}
