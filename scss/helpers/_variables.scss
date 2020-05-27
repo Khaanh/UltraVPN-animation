@@ -1,0 +1,33 @@
+// Basic colors
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+$trans: transparent;
+
+// Custom colors...
+$text: #333f51;
+$blue: #5594fd;
+$down: #091e3d;
+$m01: #667eea; /* main 1*/
+$m02: #764ba2; /* main 2*/
+$n01: #f5f7fa; /* neutral 1*/
+$n02: #c3cfe2; /* neutral 2*/
+
+// ============Typography base============
+$main-font: 'Montserrat', Roboto, sans-serif;
+$sec-font: 'Roboto', Montserrat, sans-serif;
+$mitr-font: 'Mitr' Montserrat, sans-serif;
+$font-weight: 400;
+$font-size: 16px;
+$line-height: 20px;
+$txt-color: $text;
+
+
+// ============Typography buttons============
+$btn-ff: $main-font;
+$btn-fz: $font-size;
+$btn-lh: $line-height;
+$btn-fw: 500;
+$btn-color: $blue;
+$btn-bgc: $white;
+$btn-radius: 50px;

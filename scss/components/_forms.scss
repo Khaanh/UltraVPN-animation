@@ -1,0 +1,209 @@
+.form {
+  small {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 8px;
+    display: inline-block;
+  }
+}
+
+.form-holder {
+  margin-bottom: 32px;
+}
+
+.form-row {
+  position: relative;
+  max-width: 584px;
+  width: 100%;
+  margin: 0 8px;
+  @media only screen and (max-width: 568px) {
+    margin: 0 8px 16px;
+  }
+  &.icon-envelop {
+    &:after {
+      content: '';
+      position: absolute;
+      background-image: url(../img/icon-envelope.svg);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+      height: 20px;
+      width: 20px;
+      left: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &.icon-padlock {
+    &:after {
+      content: '';
+      position: absolute;
+      background-image: url(../img/icon-padlock.svg);
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+      height: 20px;
+      width: 20px;
+      left: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &--md {
+    max-width: 160px;
+    @media only screen and (max-width: 568px) {
+      margin: 0 8px 16px;
+      max-width: 100%;
+    }
+  }
+}
+
+.form-label {
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  text-align: left;
+  width: 100%;
+  span {
+    display: block;
+    margin-bottom: 16px;
+  }
+}
+
+.form-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 -8px 16px;
+  @media only screen and (max-width: 479px) {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.form-control{
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: $text;
+  height: 50px;
+  background-color: $white;
+  border: 1px solid #bbb;
+  border-radius: 50px;
+  text-align: left;
+  padding: 14px 24px;
+  box-shadow: 2px 3px 20px rgba(255, 255, 255, 0.25);
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  outline: none;
+  resize: none;
+  margin: 0;
+  @include transition;
+  &:focus {
+    border: 1px solid $down;
+  }
+  &--has-icon {
+    padding: 14px 14px 14px 60px;
+  }
+  &--acc {
+    height: 40px;
+    padding: 8px 8px 8px 44px;
+  }
+}
+*::-webkit-input-placeholder {
+  opacity: 1;
+  color: #7e7e7e; 
+}
+*:-moz-placeholder {
+  opacity: 1;
+  color: #7e7e7e; 
+}
+*::-moz-placeholder {
+  opacity: 1;
+  color: #7e7e7e; 
+}
+*:-ms-input-placeholder {
+  opacity: 1;
+  color: #7e7e7e; 
+}
+
+
+
+//Plan page forms
+.form-payment {
+  background: #fff;
+  border: 1px solid #eaf0ff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  padding: 32px;
+  max-width: 750px;
+  width: 100%;
+  margin-right: auto;
+  margin-bottom: 20px;
+  @media only screen and (max-width: 479px) {
+    padding: 32px 18px;
+  }
+  &__plus-list {
+    margin-bottom: 32px;
+  }
+  &__btn {
+    max-width: 296px;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+.agreement {
+  display: block;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.admin-form {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: $text;
+  height: 28px;
+  background-color: $white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0 8px;
+  max-width: 162px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 2px 3px 20px rgba(255, 255, 255, 0.25);
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  outline: none;
+  resize: none;
+  margin: 0;
+  margin-right: 8px;
+  @include transition;
+  &:focus {
+    border: 1px solid #5496fd;
+  }
+}
+
+*::-webkit-input-placeholder {
+  opacity: 1;
+  color: $text; 
+}
+*:-moz-placeholder {
+  opacity: 1;
+  color: $text; 
+}
+*::-moz-placeholder {
+  opacity: 1;
+  color: $text; 
+}
+*:-ms-input-placeholder {
+  opacity: 1;
+  color: $text; 
+}

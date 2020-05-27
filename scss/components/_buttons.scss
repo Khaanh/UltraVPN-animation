@@ -1,0 +1,54 @@
+.btn {
+  font-family: $btn-ff;
+  font-size: $btn-fz;
+  line-height: $btn-lh;
+  font-weight: $btn-fw;
+  color: $btn-color;
+  border: 1px solid $trans;
+  background-color: $btn-bgc;
+  border-radius: $btn-radius;
+
+  padding: 15px 14px;
+  text-align: center;
+  min-width: 100px;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  appearance: none;
+  background-origin: border-box;
+  @include transition;
+  @media only screen and (max-width: 992px) {
+    padding: 12px 8px;
+  }
+  &:focus,
+  &:hover {
+    border: 1px solid $white;
+    background-color: $trans;
+    color: $white;
+  }
+  &--border {
+    border: 1px solid #5990fd;
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(173.83deg, #6a7ffe 15.12%, #5b8cfd 46.48%, #4e9ffd 79.16%, #49a4fc 97.45%);
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  color: $white;
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 0;
+    border: 1px solid $trans;
+  }
+}
+
+
+button[disabled] {
+  color: inherit;
+  cursor: not-allowed;
+  background-color: $gray;
+}
