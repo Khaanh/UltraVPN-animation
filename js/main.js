@@ -5,6 +5,8 @@ $(function() {
   //= include/validate-form
   //= include/animation
   //= include/mobile-menu
+  
+  $('.wow').css("visibility", "visible")
 
   jcf.replaceAll();
 
@@ -12,9 +14,7 @@ $(function() {
     $(window).scrollTop(0);
   })
 
-  $('.wow').css("visibility", "visible")
 
-  
 
 // Скрипт для демонстрации работы модальных окон.
 // Можно отключить
@@ -39,6 +39,27 @@ $(function() {
     $('.account-info').addClass('is-hidden');
     $('.header__btn').removeClass('is-hidden');
   }
+
+
+  // Скприпт для внутренних страниц
+  function cotrolAcc() {
+    $('.js-accOpen').on('click', function() {
+      $(this).toggleClass('is-toggle')
+    })
+
+    $(document).mouseup(function (e){
+      let acc = $('.js-accOpen'); 
+      if (!acc.is(e.target) && acc.has(e.target).length === 0) { 
+        acc.removeClass('is-toggle');
+      }
+    });
+  }cotrolAcc();
+
+  // Отключение уведомления
+  $('.js-closeNotice').on('click', function() {
+    $(this).closest('.notice').removeClass('is-visible')
+  })
+
 
 
 

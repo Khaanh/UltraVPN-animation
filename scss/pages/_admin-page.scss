@@ -198,6 +198,9 @@
   @media only screen and (max-width: 768px) {
     display: flex;
   }
+  @media only screen and (max-width: 375px) {
+    flex-direction: column;
+  }
   &__link {
     font-family: $sec-font;
     text-decoration: none;
@@ -210,6 +213,9 @@
     @media only screen and (max-width: 768px) {
       margin: 0 auto;
     }
+    @media only screen and (max-width: 375px) {
+      margin: 0 auto 12px;
+    }
     @include hover() {
       color: #333F51;
     }
@@ -221,6 +227,9 @@
       background-color: #eaf0ff;
       bottom: 0;
       right: -16px;
+      @media only screen and (max-width: 375px) {
+        display: none;
+      }
     }
     &:last-child {
       &:after {
@@ -234,6 +243,9 @@
         background-color: #eaf0ff;
         bottom: 0;
         left: -6px;
+        @media only screen and (max-width: 375px) {
+          display: none;
+        }
       }
     }
     &.is-current {
@@ -399,16 +411,36 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 4px;
-  span {
-    font-size: 14px;
-    line-height: 16px;
-    color: #5496fd;
-    opacity: 1;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    @include hover() {
-      opacity: 0.7;
-    }
+}
+
+.admin-change {
+  font-size: 14px;
+  line-height: 16px;
+  color: #5496fd;
+  opacity: 1;
+  cursor: pointer;
+  &.is-none {
+    display: none;
+  }
+}
+
+.btn-save {
+  font-size: 14px;
+  line-height: 16px;
+  color: #5496fd;
+  opacity: 1;
+  cursor: pointer;
+  border: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  transition: all 0.3s ease;
+  display: none;
+  &.is-saved {
+    display: block;
+  }
+  @include hover() {
+    opacity: 0.7;
   }
 }
 
@@ -422,10 +454,13 @@
   &.jcf-focus {
     border: 1px solid blue;
   }
+  .jcf-list .jcf-option {
+    font-size: 16px;
+  }
   .jcf-select-text {
     cursor: pointer;
     span {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 16px;
       font-weight: 500;
       color: #333f51;
@@ -475,6 +510,9 @@
   margin: 0;
   height: 22px;
   border-radius: 5px;
+  @media only screen and (max-width: 375px) {
+    margin: 0 auto 12px;
+  }
   &.jcf-focus {
     border: 1px solid blue;
   }
@@ -490,9 +528,6 @@
       font-weight: 400;
     }
   }
-  // .jcf-select-drop {
-  //   padding: 0 4px;
-  // }
   &.jcf-select-drop .jcf-select-drop-content {
     border: 1px solid blue;
   }

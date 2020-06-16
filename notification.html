@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  //= layout/_head.html
+<body>
+  <div class="wrapper">
+    <main class="main-page">
+      //= layout/_header.html
+
+      <!-- Notification -->
+      <div class="notice is-visible">
+        <div class="notice__wrap">
+          <div class="notice__txt">Пользуясь случаем, позвольте напомнить Вам, что срок оплаты <span>тарифа(тарифов)</span>истекает через <span>5</span> дней.</div>
+          <div class="notice__block">
+            <p>Для оплаты можете перейти по следующим ссылкам:</p>
+            <ul class="notice__list">
+              <li class="notice__items">
+                <span>1.</span>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="notice__link">https://khaanh.github.io/UltraVPN-animation/</a>
+              </li>
+              <li class="notice__items">
+                <span>2.</span>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="notice__link">https://khaanh.github.io/UltraVPN-animation/</a>
+              </li>
+            </ul>
+          </div>
+          <div class="notice__deal">
+            <button type="button" class="notice__close js-closeNotice">Напомнить позже</button>
+          </div>
+        </div>
+      </div>
+
+
+      <p>Вызов модального окна для подтверждения соглашения: Cancel service</p>
+
+
+      <div class="test js-modal-open" data-target="modal-3" style="cursor: pointer;">Проверка модального окна: Cancel service</div>
+
+
+      <div class="modal" data-open='modal-3'>
+        <div class="modal-dialog">
+          <div class="modal-content confirm">
+            <div class="confirm__quest">Вы уверены что хотите изменить тарифный план?</div>
+            <div class="confirm__btns-grp">
+              <button type="button" class="confirm__btn btn-yes js-modal-close">Да, уверен</button>
+              <button type="button" class="confirm__btn btn-no js-modal-close">Нет</button>
+            </div>
+   
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    //= layout/_footer.html
+  </div>
+  
+  <noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
+  <script src="js/libs/jquery.min.js"></script>
+  <script src="js/libs/jquery.mask.min.js"></script>
+  <script src="js/libs/jcf.min.js"></script>
+  <script src="js/libs/jcf.select.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>
