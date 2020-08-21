@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P3F53WD');</script>
+  <!-- End Google Tag Manager -->
   	<meta charset="UTF-8">
   	<meta name="format-detection" content="telephone=no">
   	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=0,shrink-to-fit=no">
@@ -10,8 +17,24 @@
   	<link rel="stylesheet" href="css/main.min.css">
   	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">	
   	<link rel="apple-touch-icon" href="favicon.ico">
+    <script src="js/libs/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+        boxClass: 'wow',     
+        animateClass: 'animated',
+        offset: 0,         
+        mobile: false,      
+        live: true       
+      }
+      )
+      wow.init();
+    </script>
   </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3F53WD"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div class="wrapper">
     <main class="main-page">
       <header class="header">
@@ -22,6 +45,8 @@
             </div>
           </div>
           <!-- /.burger js-openMen -->
+      
+          
       
           <a href="./" class="logo wow bounceInLeft" data-wow-delay="0.1s">
             <i class="logo__icon">
@@ -34,22 +59,55 @@
           <div class="nav-wrapper">
             <nav class="nav">
               <ul class="menu">
-                <li class="menu-item icon-home wow fadeInDown" data-wow-delay="0.1s"><a href="#">Home</a></li>
-                <li class="menu-item icon-features wow fadeInDown" data-wow-delay="0.2s"><a href="#">Features</a></li>
-                <li class="menu-item icon-price wow fadeInDown" data-wow-delay="0.3s"><a href="#">Price</a></li>
-                <li class="menu-item icon-help wow fadeInDown" data-wow-delay="0.4s"><a href="#">Help</a></li>
-                <li class="menu-item icon-apps wow fadeInDown" data-wow-delay="0.5s"><a href="#">Apps</a></li>
-                <li class="menu-item icon-faq wow fadeInDown" data-wow-delay="0.6s"><a href="#">FAQ</a></li>
+                <li class="menu-item icon-home wow fadeInDown" data-wow-delay="0.1s">
+                  <a name="#home" href="index.html#home">Home</a>
+                </li>
+                <li class="menu-item icon-features wow fadeInDown" data-wow-delay="0.2s">
+                  <a name="#features" href="index.html#features">Features</a>
+                </li>
+                <li class="menu-item icon-price wow fadeInDown" data-wow-delay="0.3s">
+                  <a name="#price" href="index.html#price">Price</a>
+                </li>
+                <li class="menu-item icon-help wow fadeInDown" data-wow-delay="0.4s">
+                  <a name="#help" href="index.html#help">Help</a>
+                </li>
+                <li class="menu-item icon-apps wow fadeInDown" data-wow-delay="0.5s">
+                  <a name="#apps" href="index.html#apps">Apps</a>
+                </li>
+                <li class="menu-item icon-faq wow fadeInDown" data-wow-delay="0.6s">
+                  <a name="#faq" href="index.html#faq">FAQ</a>
+                </li>
               </ul>
             </nav>
             <!-- /.nav -->
+        
+            <div class="header-widget">
+              <div class="lang">
+                <div class="lang__current">en</div>
+                <ul class="lang__list">
+                  <li class="lang__items">
+                    <a href="#" class="lang__link">ru</a>
+                  </li>
+                  <li class="lang__items">
+                    <a href="#" class="lang__link">en</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.lang -->
+              
+              <a href="#" class="btn header__btn js-modal-open wow fadeInDown" data-wow-delay="0.7s" data-target='modal-1'>My account</a>
+            </div>
       
-            <a href="#" class="btn header__btn js-modal-open wow fadeInDown" data-wow-delay="0.7s" data-target='modal-1'>My account</a>
       
-            <div class="account-info is-hidden">
+            <!-- Блок для внутренних страниц(админ) -->
+            <div class="account-info is-hidden js-accOpen">
               <div class="account-info__email">
                 <p>email@mail.com</p>
                 <i class="account-info__icon"></i>
+              </div>
+              <div class="account-info__menu">
+                <a href="#" class="account-info__link">Текущий акк</a>
+                <a href="#" class="account-info__link">Выход</a>
               </div>
             </div>
             
@@ -288,7 +346,7 @@
     
           <div class="footer-box">
             <nav class="pages-nav">
-              <div class="caption">Pages</div>
+              <div class="caption pages-nav__caption">Pages</div>
               <ul class="pages-list">
                 <li class="pages-items">
                   <a href="#" class="pages-link">Home</a>
@@ -321,7 +379,10 @@
             </nav>
             <!-- /.pages-nav -->
     
-            <nav class="contact-nav">
+    <!-- Закоментил на всякий случай
+    После завершения проекта, если этот блок не поданобиться - можо смело удалять -->
+    
+    <!--         <nav class="contact-nav">
               <div class="caption">Contact us</div>
               <ul class="pages-list">
                 <li class="pages-items">
@@ -337,13 +398,17 @@
                   <a href="#" class="pages-link">8584 W Sherman Dr undefined Desoto, <br>Oklahoma 94015 United States</a>
                 </li>
               </ul>
-            </nav>
+            </nav> -->
             <!-- /.contact-nav -->
           </div>
           
         </div>
         
         <div class="copy">(c) Anim ipsum consequat id tempor ad nostrud aliqua. </div>
+        
+      </div>
+    
+      <div class="back-to-top is-show">
         
       </div>
     </footer>
@@ -396,6 +461,31 @@
       </div>
     </div>
     
+    <div class="modal" data-open='modal-2'>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title modal-title--del">Вы уверены что хотите отменить действие?</h5>
+            <button class="modal-close js-modal-close">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                <rect width="19.2846" height="1.92846" transform="matrix(0.70711 0.707103 -0.70711 0.707103 1.36368 0.000183105)" fill="#5f88fd"/>
+                <rect width="19.2846" height="1.92846" transform="matrix(0.70711 -0.707104 0.70711 0.707103 0 13.6362)" fill="#5f88fd"/>
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+          <div class="modal-footer modal-footer--del">
+            <button class="js-modal-close">Да</button>
+            <button class="js-modal-close">Нет</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
     <!-- ========================== -->
     <div class="html-wrap">
       <div class="toggle-menu js-close-menu">
@@ -432,7 +522,7 @@
         right: 0;
         border: 2px solid #000;
         background: #fff;
-        z-index: 999;
+        z-index: 9999;
       }
       .html-list {
         padding: 12px 8px;
@@ -485,9 +575,10 @@
   </div>
   
   <noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs/jquery.min.js"></script>
   <script src="js/libs/jquery.mask.min.js"></script>
-  <script src="js/libs/wow.min.js"></script>
+  <script src="js/libs/jcf.min.js"></script>
+  <script src="js/libs/jcf.select.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 </html>

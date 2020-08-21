@@ -114,77 +114,50 @@
           </div>
         </div>
       </header>
-      
-      <div id="admin-question" class="admin-question">
-        <div class="admin-question__holder">
-          <div class="admin-question__title">How to set up VPN for Android?</div>
-          
-          <p>From the Namecheap VPN page, select your desired plan:</p>
-          <picture>
-            <source type="image/webp" srcset="./img/admin-q-01.webp" width="539" height=281>
-            <img src="./img/admin-q-01.png" alt="pic" width="539" height=281>
-          </picture>
 
-          <p>Once you click Get started, you will be prompted to sign into your Namecheap  account:</p>
-          <picture>
-            <source type="image/webp" srcset="./img/admin-q-02.webp" width="374" height=415>
-            <img src="./img/admin-q-02.jpg" alt="pic" width="374" height=415>
-          </picture>
-  
-          <p>or to create a new account:</p>
-          <picture>
-            <source type="image/webp" srcset="./img/admin-q-03.webp" width="320" height=518>
-            <img src="./img/admin-q-03.jpg" alt="pic" width="320" height=518>
-          </picture>
-  
-          <p>Once you’re logged in, enter payment details and confirm your purchase of  Namecheap VPN for Android:</p>
-          <picture>
-            <source type="image/webp" srcset="./img/admin-q-01.webp" width="539" height=281>
-            <img src="./img/admin-q-01.png" alt="pic" width="539" height=281>
-          </picture>
-  
-          <p>Once you have installed the app from Google Play and opened it, first allow it   to access your device’s location:</p>
-          <picture>
-            <source type="image/webp" srcset="./img/admin-q-04.webp" width="320" height=553>
-            <img src="./img/admin-q-04.jpg" alt="pic" width="320" height=553>
-          </picture>
-  
-          <p>Once you have installed the app from Google Play and opened it, first allow it   to access your device’s location:</p>
-          <picture>
-            <source type="image/webp" srcset="./img/admin-q-05.webp" width="320" height=553>
-            <img src="./img/admin-q-05.jpg" alt="pic" width="320" height=553>
-          </picture>
-  
-          <p>Once everything is set up, two options are possible:</p>
-          <ol>
-            <li>Connect to the best location</li>
-            <li>Choose a desirable location from the map where ping time is shown and click   Connect.</li>
-          </ol>
-          <picture>
-            <source type="image/webp" srcset="./img/admin-q-06.webp" width="320" height=553>
-            <img src="./img/admin-q-06.jpg" alt="pic" width="320" height=553>
-          </picture>
-  
-          <p>By clicking the Settings icon in the right top corner, you can choose the  protocol by which you want to connect:</p>
-          <picture>
-            <source type="image/webp" srcset="./img/admin-q-07.webp" width="320" height=553>
-            <img src="./img/admin-q-07.jpg" alt="pic" width="320" height=553>
-          </picture>
-  
-          <p>This page will appear to show the connection has been successfully established:</p>
-
-          <picture>
-            <source type="image/webp" srcset="./img/admin-q-08.webp" width="320" height=553>
-            <img src="./img/admin-q-08.jpg" alt="pic" width="320" height=553>
-          </picture>
-
+      <!-- Notification -->
+      <div class="notice is-visible">
+        <div class="notice__wrap">
+          <div class="notice__txt">Пользуясь случаем, позвольте напомнить Вам, что срок оплаты <span>тарифа(тарифов)</span>истекает через <span>5</span> дней.</div>
+          <div class="notice__block">
+            <p>Для оплаты можете перейти по следующим ссылкам:</p>
+            <ul class="notice__list">
+              <li class="notice__items">
+                <span>1.</span>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="notice__link">https://khaanh.github.io/UltraVPN-animation/</a>
+              </li>
+              <li class="notice__items">
+                <span>2.</span>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="notice__link">https://khaanh.github.io/UltraVPN-animation/</a>
+              </li>
+            </ul>
+          </div>
+          <div class="notice__deal">
+            <button type="button" class="notice__close js-closeNotice">Напомнить позже</button>
+          </div>
         </div>
-
-
-
-
       </div>
 
+
+      <p>Вызов модального окна для подтверждения соглашения: Cancel service</p>
+
+
+      <div class="test js-modal-open" data-target="modal-3" style="cursor: pointer;">Проверка модального окна: Cancel service</div>
+
+
+      <div class="modal" data-open='modal-3'>
+        <div class="modal-dialog">
+          <div class="modal-content confirm">
+            <div class="confirm__quest">Вы уверены что хотите изменить тарифный план?</div>
+            <div class="confirm__btns-grp">
+              <button type="button" class="confirm__btn btn-yes js-modal-close">Да, уверен</button>
+              <button type="button" class="confirm__btn btn-no js-modal-close">Нет</button>
+            </div>
+   
+          </div>
+        </div>
+      </div>
+      
     </main>
     <footer class="footer">
       <div class="container">
