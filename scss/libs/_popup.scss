@@ -83,6 +83,7 @@
     padding: 8px 12px;
     transition: all 0.3s ease;
     opacity: 1;
+    min-width: 100px;
     @include hover() {
       opacity: 0.7;
     }
@@ -169,7 +170,6 @@
   margin-bottom: 25px;
 }
 
-
 .forgot-pass {
   font-size: 10px;
   line-height: 12px;
@@ -194,5 +194,44 @@
   text-align: center;
   @include hover() {
     text-decoration: none;
+  }
+}
+
+.confirm {
+  padding: 16px;
+  border-radius: 24px;
+  &__quest {
+    font-size: 22px;
+    line-height: 1.25;
+    color: $blue;
+    margin-bottom: 24px;
+    text-align: center;
+    @media only screen and (max-width: 479px) {
+      font-size: 20px;
+    }
+  }
+  &__btns-grp {
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 16px;
+    color: $text;
+    transition: 0.2s ease;
+    margin: 0 8px;
+    @include hover() {
+      background-color: #e6e6e6;
+    }
+    &.btn-yes {
+      background-color: $blue;
+      color: #fff;
+      @include hover() {
+        background-color: #025aa5;
+      }
+    }
   }
 }

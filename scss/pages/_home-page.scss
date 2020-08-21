@@ -298,7 +298,6 @@
   &:nth-child(6) {
     transition-delay: 0.20s
   }
-
 }
 
 .protect-icon {
@@ -470,7 +469,6 @@
     }
   }
 }
-
 
 // Access-servers section
 .access-servers {
@@ -1084,6 +1082,56 @@
   }
 }
 
+
+
+/*Loader Css*/
+.preloader {
+  position: fixed;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+.lds-ellipsis {
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 64px;
+  text-align: center;
+  z-index: 9999;
+  span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $blue;
+    animation: ball-pulse-sync 1s 0s infinite ease-in-out;
+    &:nth-child(1) {
+      animation: ball-pulse-sync 1s -.14s infinite ease-in-out;
+    }
+    &:nth-child(2) {
+      animation: ball-pulse-sync 1s -70ms infinite ease-in-out;
+    }
+  }
+}
+
+@keyframes ball-pulse-sync {
+  33% {
+    transform:translateY(10px)
+  }
+  66% {
+    transform:translateY(-10px)
+  }
+  100% {
+    transform:translateY(0)
+  }
+}
+
 // Animation keyframes block 
 @keyframes rotation {
   from {
@@ -1093,5 +1141,7 @@
     transform: rotate(-359deg);
   }
 }
+
+
 
 
