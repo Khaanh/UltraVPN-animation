@@ -16,7 +16,14 @@
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 	
-	  gtag('config', 'UA-175787068-1');
+	  gtag('config', 'UA-175787068-1'),
+	
+	  gtag('event', 'play', {
+	    'event_category': 'Videos',
+	    'event_label': 'Fall Campaign'
+	  });
+	
+	  
 	</script>
 	
 	
@@ -131,7 +138,7 @@
       <div class="gtm-block">
         <form action="#" class="gtm-form" id="gtm-form">
           <label class="gtm-label">
-            <input type="text" class="form-control" id="gtm-form-name" name="name" placeholder="Name">
+            <input type="text" class="form-control" id="gtm-form-name" name="name" placeholder="Name" onblur="gtag('name', this.value)">
           </label>
           <label class="gtm-label">
             <input type="email" class="form-control" id="gtm-form-email" name="email" placeholder="Email">
