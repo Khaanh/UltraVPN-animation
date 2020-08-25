@@ -63,8 +63,7 @@ $(function() {
 
 
 dataLayer.push({
-  'event': 'asdasd',
-  'event2': 'event2'
+
 });
 
 
