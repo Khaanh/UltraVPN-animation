@@ -60,11 +60,22 @@ $(function() {
     $(this).closest('.notice').removeClass('is-visible')
   })
 
+  window.dataLayer = window.dataLayer || [];
+  $('.form-control').on('focus', function () {
+
+    window.dataLayer.push({ 
+      'event' : 'credit_form',
+      'step_name' : 'phone',
+      'step_status' : 'valid',
+    });
+    
+  })
 
 
-dataLayer.push({
 
-});
+
+
+
 
 
 
