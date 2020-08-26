@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	  <!-- Google Tag Manager -->
+	<!--   <script>
+	    let gtmName = document.getElementById('gtmFormName');
+	    window.dataLayer = window.dataLayer || [];
+	
+	      gtmName.onblur = function () {
+	        console.log('asdasd');
+	
+	        window.dataLayer.push({
+	          'formInput' : 'credit_form',
+	          'step_status' : 'valid',
+	          'value' : this.value,
+	          'non_interaction': true
+	        });
+	      }
+	      
+	
+	  </script> -->
+	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-P3F53WD');</script>
+	})(window,document,'script','dataLayer','GTM-TX926R4');</script>
 	<!-- End Google Tag Manager -->
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -23,7 +40,7 @@
 	    'event_label': 'Fall Campaign'
 	  });
 	
-	  
+	
 	</script> -->
 	
 	
@@ -52,7 +69,7 @@
 	</head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3F53WD"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TX926R4"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 	<div class="wrapper">
@@ -138,13 +155,16 @@
       <div class="gtm-block">
         <form action="#" class="gtm-form" id="gtm-form">
           <label class="gtm-label">
-            <input type="text" class="form-control" id="gtm-form-name" name="name" placeholder="Name" onblur="gtag('name', this.value)">
+            <!-- <input type="text" class="form-control" id="gtm-form-name" name="name" placeholder="Name"onblur="window.dataLayer.push({'event': this.value})"> -->
+            <input type="text" class="form-control" id="gtmFormName" name="name" placeholder="Name">
           </label>
+
           <label class="gtm-label">
-            <input type="email" class="form-control" id="gtm-form-email" name="email" placeholder="Email">
+            <input type="email" class="form-control" id="gtmFormEmail" name="email" placeholder="Email">
           </label>
+
           <label class="gtm-label">
-            <textarea name="comment" class="form-control" id="gtm-from-comment" placeholder="Your comment"></textarea>
+            <textarea name="comment" class="form-control" id="gtmFromComment" placeholder="Your comment"></textarea>
           </label>
 
           <button class="gtm-btn" id="gtm-btn">Submit</button>
